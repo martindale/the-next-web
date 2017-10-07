@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Taking Back The Web</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/eric.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'TODO: REPLACE THIS VALUE', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background-image="/img/the-castle-is-burning.jpg">
+          <section>
+            <h1>Taking Back The Web</h1>
+            <h4>Information Markets &amp; Sociotechnical Systems</h4>
+            <h3 style="margin-top: 5em;"><small>Eric Martindale &bull; Hackers Congress &bull; October 7th, 2017</small></h3>
+            <h2>#HCPP17 &bull; Paralelní Polis</h2>
+          </section>
+        </section>
+
+        <section>
+          <blockquote>“I want a web that's <strong>open</strong>, works internationally, works as well as possible, and is <strong>not nation-based</strong>.”<br />
+            <cite style="float: right;">– Timothy Berners-Lee</cite>
+          </blockquote>
+        </section>
+        
+        <section>
+          <h2>Why was the web great?</h2>
+          <section></section>
+          <section>
+            <p><strong>Reason #1:</strong> <span class="fragment">&nbsp;&nbsp;&nbsp;<strong>FREEDOM!</strong></span></p>
+            <p class="fragment">Self-publishing was easy.</p>
+          </section>
+          <section>
+            <h3>Total # of Sites</h3>
+            <img src="/img/growth-of-the-web.png" />
+          </section>
+          <section>
+            <p><strong>Reason #2:</strong> <span class="fragment">&nbsp;&nbsp;&nbsp;<code>hypertext</code> gave us <em><a href="#context">context</a></em>.</span></p>
+          </section>
+          <section>
+            <img src="/img/structured-data.png" />
+            <h3>Structured Data</h3>
+          </section>
+          <section>
+            <p><strong>Reason #3: </strong> <span class="fragment">&nbsp;&nbsp;&nbsp;Discoverability</span></h3>
+            <p class="fragment">Good ideas were easier to find.</p>
+          </section>
+          <section>
+            <h3>People are curious creatures!</h3>
+            <img src="/img/google-growth-graph.jpg" />
+          </section>
+          <section>
+            <img src="/img/duckduckgo-growth.png" />
+          </section>
+        </section>
+        
+        <section>
+          <h2>What <em>didn't</em> it give us?</h2>
+          <section>
+            <ul>
+              <li class="fragment">Privacy</li>
+              <li class="fragment">Security</li>
+              <li class="fragment">Utopia</li>
+            </ul>
+          </section>
+        </section>
+        
+        <section>
+          <h2>What happened?</h2>
+          <section></section>
+          
+          <section>
+            <h3>Centralized Design</h3>
+            <p class="fragment">Things break.  Sometimes, we even break in.</p>
+          </section>
+          
+          <section>
+            <h3>Encryption Added Later</h3>
+            <p class="fragment">Given the choice, users can't be trusted to care.</p>
+          </section>
+          
+          <section>
+            <h3>Theft of Value</h3>
+            <p class="fragment">Big companies are making money from <strong>your</strong> work!</p>
+          </section>
+
+          <section>
+            <h3>Imbalanced Social Dynamics</h3>
+            <p class="fragment">"Business success" often means ignoring real-world implications.</p>
+            
+            <h4 class="fragment" style="margin-top: 1em;">Users are people too!</h4>
+          </section>
+        </section>
+        
+        <section>
+          <section><h2>Where did the web leave us?</h2></section>
+          <section>
+            <img class="plain small" src="/img/equifax.png" />
+          </section>
+          <section>
+            <h2 style="font-size: 3em;">64,000,000+</h2>
+            <h4>credit cards compromised in <strong>2014</strong> <em>alone</em></h4>
+            
+            <h4 class="fragment">thats <span style="font-size: 2em;">20%</span> of the US population</h4>
+          </section>
+            
+          <section>
+            <table>
+              <thead>
+                <tr><td>Company</td><td>When</td><td># of Cards</td></tr>
+              </thead>
+              <tbody>
+                <tr><td>Neiman Marcus</td><td>January</td><td>1,100,000</td>
+                <tr><td>Michaels</td><td>January</td><td>3,000,000+</td>
+                <tr><td>Sally Beauty</td><td>March</td><td>280,000+</td>
+                <tr><td>PF Changs</td><td>June</td><td>200,000+</td>
+                <tr><td>UPS</td><td>August</td><td>100,000+</td>
+                <tr><td>Goodwill</td><td>September</td><td>868,000</td>
+                <tr><td>Home Depot</td><td>September</td><td>56,000,000</td>
+                <tr><td>Staples</td><td>December</td><td>1,160,000</td>
+              </tbody>
+            </table>
+          </section>
+          
+          <section>
+            <img src="/img/global-card-fraud.jpg" class="medium plain" />
+          </section>
+          
+          <section>
+            <h2>...<span class="fragment">WTF?</span></h2>
+          </section>
+        
+          <section data-background-image="/img/the-castle-is-burning.jpg">
+            <h2>The castle is burning.</h2>
+          </section>
+          <section data-background-image="/img/the-castle-is-burning.jpg">
+            <p>███ ██ █ ████ everything ███ █████ is █████ ████ ████ fine ████ ███ █ ██████ trust █████ ██████ ███ your █████ ████ government.</p>
+          </section>
+        </section>
+        <section>
+          <h2>The Next Web</h2>
+          <section></section>
+          
+          <section>
+            <h3>Encrypted By Default</h3>
+            <p class="fragment">Privacy enforced, selectively disclosed.</p>
+          </section>
+          <section>
+            <h3>Strictly Peer-to-Peer</h3>
+            <p class="fragment">No centralized points of failure.</p>
+          </section>
+          <section>
+            <h3>Provably Free Trade</h3>
+            <p class="fragment">&ldquo;Cryptographic Enforcement of Voluntary Agreements&rdquo;</p>
+          </section>
+          
+          <section>
+            <h4>Recap...</h4>
+            
+            <ol>
+              <li class="fragment">Encrypted By Default</li>
+              <li class="fragment">Strictly Peer-to-Peer</li>
+              <li class="fragment">Provably Free Trade</li>
+            </ol>
+
+            <h3 class="fragment" style="margin-top: 1em;">So, How do we build it?</h3>
+          </section>
+        </section>
+        
+        <section>
+          <h2>Unlearning</h2>
+          <section></section>
+          <section>
+            <h3>Technologies vs. Social Systems</h3>
+          </section>
+          <section>
+            <h3>Social Systems <em>as</em> Technologies</h3>
+            <h4 class="fragment"><strong>Example:</strong> the <span style="color: #FF9900;">Bitcoin</span> network</h4>
+          </section>
+        </section>
+        
+        <section>
+          <section>
+            <img class="medium plain" src="img/bitcoin-icon-wreath.png" />
+          </section>
+          <section>
+            <h3>Crypto-economics</h3>
+            <p class="fragment">Network utility (security) is mutually incentivized.</p>
+            <img class="plain large fragment" src="/img/nash-equilibrium.png"  style="width: 40%;" />
+          </section>
+          <section>
+            <h3>Network Services</h3>
+            <p class="fragment">Wouldn't it be nice if we could do the same for <s>law</s> code?</p>
+          </section>
+        </section>
+        
+        <section>
+          <h2>Information Markets</h2>
+          <section></section>
+
+          <section>
+            <blockquote>&ldquo;Combined with emerging information markets, crypto anarchy will create a liquid market for any and all material which can be put into words and pictures.&rdquo;
+              <cite style="float: right;"><small>– Timothy C. May, <em><a href="https://www.activism.net/cypherpunk/crypto-anarchy.html">The Crypto Anarchist Manifesto</a></em>, 1988</small></cite>
+            </blockquote>
+          </section>
+          
+          <section>
+            Information Theory 101
+            <p class="fragment">$H = - \sum_{i} p_i \log_2 (p_i)$</p>
+            <p class="fragment">$H$ is the amount of entropy in bits</p>
+            <small class="fragment">over a finite field ;)</small>
+          </section>
+          
+          <section>
+            <h3 style="margin-top: 1em;">Information can be lost over time!</h3>
+            <p class="fragment">Systems need to take this into account.</p>
+            <img class="plain medium fragment" src="/img/nash-equilibrium-as-calculus.png" />
+          </section>
+          
+          <section>
+            <h3>Sociotechnical Implications</h3>
+            <p class="fragment">Equilibrium of entropy &amp; coherence.</p>
+            <img class="plain medium fragment" src="/img/equilibrium.gif" />
+          </section>
+
+          <section>
+            <blockquote>Buying and selling <s>information</s><br /> <strong>network services</strong> can be fun <br/><span class="fragment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>and</strong> profitable!</span></blockquote>
+          </section>
+          
+          <section>
+            <img class="plain medium" src="/img/routing-inverted.gif" />
+          </section>
+          
+        </section>
+        
+        <section>
+          <h2>Technology</h2>
+          <section></section>
+
+          <section>
+            <h3>Payment Channels</h3>
+            <p class="fragment">Scalable, high-performance transactions.</p>
+          </section>
+
+          <section>
+            <h3>Zero-knowledge Contingent Payments</h3>
+            <p class="fragment">Trustless payments for proof of computation.</p>
+            <p class="fragment">First <code>mainnet</code> ZKCP on Bitcoin, February 2016</p>
+          </section>
+
+          <section>
+            <h3>State Bubbles</h3>
+            <p class="fragment">&ldquo;Fields&rdquo; over which computations can be performed.</p>
+          </section>
+        </section>
+        
+        <section>
+          <h2>Examples</h2>
+          <section></section>
+          
+          <section>
+            <h3>Serverless Apps</h3>
+
+            <table style="text-align: left;">
+              <tr class="fragment">
+                <td>BID 0.00001000 5d909253...</td>
+              </tr>
+              <tr class="fragment">
+                <td>↳ &lt;deterministic-application&gt;</td>
+              </tr>
+              <tr class="fragment">
+                <td>↳ <code>VERIFY()</code></td>
+              </tr>
+              <tr class="fragment">
+                <td>↳ <code>COMPUTE( input )</code></td>
+              </tr>
+              <tr class="fragment">
+                <td>↳ <code>0ccd2baf ⇒ output</code></td>
+              </tr>
+              <tr class="fragment">
+                <td>↳ <code>PROVE( input , output )</code></td>
+              </tr>
+              <tr class="fragment">
+                <td>↳ <code>BROADCAST( output )</code></td>
+              </tr>
+            </table>
+
+          </section>
+        </section>
+
+        <section>
+          <h2>Takaways</h2>
+          <ol>
+            <li class="fragment">Humans are an important part.  Take care of them.</li>
+            <li class="fragment">Freedom creates prosperity.  Let people trade.</li>
+            <li class="fragment">Building this will <em>require</em> widespread collaboration.</li>
+          </ol>
+          
+          <h4 class="fragment" style="margin-top: 1em;">Economic engines (information markets) <br/> offer a compelling solution.</h4>
+        </section>
+        
+        <section>
+          <h2>Discussion &amp; Questions</h2>
+          <img src="img/martindale.jpg" class="rounded small inline" />
+          <h4>eric@nextweb.com &bull; @martindale</h4>
+          <h5>Presentation &amp; Source Code Available</h5>
+          <p><a href="https://martindale.github.io/the-next-web"><code>martindale.github.io/the-next-web</code></a></p>
+        </section>
+
+        <section>
+          <h2>Appendix</h2>
+          <section></section>
+          <section>
+            <ul>
+              <li>Restoration of Privacy</li>
+              <li>Elimination of Censorship</li>
+              <li>Radical Self Sovereignty</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Self-publishing</h3>
+            <blockquote>
+              <cite>
+                <a href="http://meyerweb.com/">Eric Meyer</a>
+                </cite> wrote a post
+                (<cite>
+                <a href="http://meyerweb.com/eric/thoughts/2005/12/16/tax-relief">
+                Tax Relief
+                </a>
+                </cite>)
+                about an unintentionally humorous letter he received from the
+                <a href="http://irs.gov/">Internal Revenue Service</a>.
+            </blockquote>
+            <code><small>meyerweb.com/eric/thoughts/2005/12/16/tax-relief/</small></code>
+          </section>
+
+          <section>
+            <h3>Microdata</h3>
+            <pre>&lt;cite&gt;
+ &lt;a href="http://meyerweb.com/"&gt;Eric Meyer&lt;/a&gt;
+&lt;/cite&gt; wrote a post
+(&lt;cite&gt;
+  &lt;a href="http://meyerweb.com/eric/thoughts/2005/12/16/tax-relief/"&gt;
+   Tax Relief
+  &lt;/a&gt;
+ &lt;/cite&gt;)
+about an unintentionally humorous letter he received from the
+&lt;a href="http://irs.gov/"&gt;Internal Revenue Service&lt;/a&gt;.
+</pre>
+          </section>
+        </section>
+
+        <section>
+          <h2>Why are we here?</h2>
+          <section></section>
+          <section>
+            <h3 style="width: 70%; margin-left: auto; margin-right: auto;">Central points of failure <span class="fragment">threaten the web we love.</span></h3>
+          </section>
+          <section>
+            <p>███ ██ █ ████ everything ███ █████ is █████ ████ ████ fine ████ ███ █ ██████ trust █████ ██████ ███ your █████ ████ government.</p>
+          </section>
+          <section>
+            <img class="plain small" src="/img/equifax.png" />
+          </section>
+          <section>
+            <h3>What happened?</h3>
+          </section>
+        </section>
+        
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        //history: true,
+	      mouseWheel: true,
+        slideNumber: 'c/t',
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        //
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+        },
+
+        dependencies: [
+          { src: 'plugin/math/math.js', async: true },
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+
+      function update() {
+        var timenow = new Date().getTime() / 1000;
+        //current time in seconds from the unix epoch start
+
+        var downtime= (6*60*60+20*60);
+        //6:20 of downtime on 3/12/2013
+        //converted to seconds
+        //source: http://vincesamios.com/bitcoins/accidental-hardfork-the-resilience-of-a-fledgling-bitcoin
+
+        var totaltime = timenow - 1230951265;
+        //where 1230951265 is the number of seconds since the unix epoch start at the time of the first block on Jan 3 2009 02:54:25 GMT
+
+        var uptime = 100*(totaltime-downtime)/totaltime;
+        var printme = uptime.toFixed(11).toString().concat(" %");
+
+        document.querySelector('*[data-bind="bitcoinDowntime"]').innerHTML = printme;
+      }
+
+      update();
+
+      setInterval(update, 200);
+    </script>
+  </body>
+</html>
